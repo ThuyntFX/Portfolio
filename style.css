@@ -88,8 +88,13 @@
 #contact {
   padding-bottom: 4rem;
 }
-.hidden {
-  display: none;
+
+.collapse.navbar-collapse {
+  display: block;
+  height: 0;
+}
+.navbar-collapse.open {
+  height: 100%;
 }
 .phone-number {
   font-size: 1rem;
@@ -98,4 +103,8 @@
   background-color: black;
   border-radius: 2rem;
   padding: 0.5rem;
+  display: inline-block;
+}
+.phone-number.hidden {
+  display: block;
 }
